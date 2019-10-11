@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+@font-face {
+    font-family: 'Lato Hairline';
+    src: local('Lato Hairline'), local('Lato-Hairline'),
+        url('../fonts/lato-hearline/latohairline.woff2') format('woff2'),
+        url('../fonts/lato-hearline/latohairline.woff') format('woff'),
+        url('../fonts/lato-hearline/latohairline.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato Hairline';
+    src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'),
+        url('../fonts/lato-hearline/latohairlineitalic.woff2') format('woff2'),
+        url('../fonts/lato-hearline/latohairlineitalic.woff') format('woff'),
+        url('../fonts/lato-hearline/latohairlineitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font: 10px/1.6 'Lato', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.ba-container {
+    max-width: 1180px;
+    width: 96%;
+}
+header {
+    height: 100vh;
+    background: url('../img/main_image.jpg') no-repeat center;
+    background-size: cover;
+    color: #fff;
+}
+
+
+.btn-nav {
+    list-style: none;
+    float: right;
+    text-transform: uppercase;
+    margin: 25px 0 0;
+}
+.btn-nav a {
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 3px solid #ff000000;  
+    transition: all .25s ease-in-out;
+}
+.btn-nav a:hover,
+.btn-nav a:active,
+.btn-nav a:focus {
+    border-bottom: 3px solid #fff;
+}
+
+.btn-nav li {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.btn-nav li:last-child {
+    margin-right: 0;
+}
+ 
+.title{
+    text-align: center;
+}
+.find-your-favorit {
+    font: bold italic 3.6rem 'Times New Roman', sans-serif;
+    text-align: center;
+    margin: 20vh auto 0;
+    padding: 0 20px;
+    opacity: .7;
+}
+header h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10rem; 
+    margin: 0;
+    padding: 0 20px;
+    line-height: 1.1;
+} 
+.btn {
+    border: 3px solid #fff;
+    display: inline-block;
+    background: inherit;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 20px 70px;
+    border-radius: 5px;
+    margin: 30px auto 0;
+    transition: all .25s ease-in-out;
+}
+.btn:hover,
+.btn:active,
+.btn:focus {
+    border: 3px solid #fff;
+    background: #fff;
+    color: brown;
+}
+.little-title{
+    font-size: 1.4rem;
+    margin: 35px auto;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+.little-title a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.qualities {
+    padding-bottom: 90px;
+}
+.img-qualities {
+    width: 10rem;
+    height: 10rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    border-radius: 50%;
+    border: 3px solid #000;
+    margin: 100px auto 0;
+}
+.qualities h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.qualities p {
+    font-size: 1.6rem;
+    font-weight: lighter;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.app {
+    background: #f7f7f7;
+    padding: 100px 0 0;
+}
+.left-box {
+    font-size: 0;   
+}
+
+.right-box {
+    padding: 75px 20px 40px;
+}
+.right-box h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: relative;
+}
+.right-box h2::after {
+    content: "";
+    border-bottom: 3px solid #f57365;
+    position: absolute;
+    left: 0px;
+    top: 2.5rem;
+    width: 12rem;
+}
+.right-box p {
+    font-size: 1.6rem;
+    font-weight: lighter;
+    margin: 0 0 40px 0;
+}
+.right-box img {
+    margin-right: 10px;
+}
+
+.reviews {
+    padding: 60px 0;
+    background: #4a3949 url('../img/reviews-img.png') no-repeat center;
+}
+.reviews__box {
+    padding: 20px;
+}
+.reviews img {
+    border: 3px solid #948a94;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+.reviews h2,
+.reviews p {
+    text-align: center;
+    color: #948a94;
+        
+}
+.reviews h2 {
+    font: 36px/1.7 'Lato Hairline', serif;
+}
+.reviews p {
+    font: italic 20px/1.7 'Lato Hairline', serif;
+}
+.reviews p::before,
+.reviews p::after {
+    content: "-";
+    margin: 5px;
+}
+.reviews ul {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+.reviews li {
+    display: inline-block;
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background: #948a94;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.reviews li:hover,
+.reviews li:active,
+.reviews li:visited,
+li.active {
+    background: #fff;
+}
+
+
+.dishes {
+    padding: 80px 0 0;
+}
+.dishes .dishes-container {
+    margin: 0;
+}
+.dishes h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 45px;
+}
+.dishes h2::after {
+    content: "";
+    border-bottom: 2px solid #f57365;
+    position: absolute;
+    top: 2.8rem;
+    width: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.dishes-container  > [class*="ba-width-1-5"] {
+    float: left;
+    padding-left: 0px;
+}
+.dishes__box {
+    font-size: 0;
+    position: relative;
+    background: #f57365;
+}
+.dishes__box img {
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease;
+}
+.dishes__box:hover img{
+    opacity: 0;
+}
+
+.dishes-p-a {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+.dishes-p-a p {    
+    font: bold italic 1.5rem/1 'Times New Roman', serif;
+    overflow: hidden;
+    max-height: 1.5rem;
+}
+.dishes-p-a h3 {
+    font: bold 2.6rem/1 'Lato', serif;
+    margin: 5px 0;
+    padding: 0 10px;
+    overflow: hidden;
+    max-height: 2.6rem;
+    text-transform: uppercase;
+}
+.dishes__metrics {
+    text-align: center;
+    font-weight: bold;
+    padding: 55px 0;
+}
+.dishes__metrics h3 {
+    font-size: 3.6rem;
+    line-height: 1;
+    max-height: 3.6rem;
+    overflow: hidden;
+    padding: 0 5px;
+    margin: 0;
+}
+.dishes__metrics p {
+    font-size: 1.6rem;
+    line-height: 1;
+    max-height: 1.6rem;
+    overflow: hidden;
+    padding: 0 5px;
+    margin: 20px 0 0;
+}
+footer {
+    background: #f7f7f7;
+    font-weight: 200;
+    font-size: 1.4rem;
+    padding: 25px 0;
+}
+footer a {
+    color: #000;
+    font-weight: 400;
+}
+footer p {
+    color: #8b8b8b;
+}
+.footer-box-right {
+    text-align: right;
+}
+

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Lato Hairline';
+    src: local('Lato Hairline'), local('Lato-Hairline'), url('latohairline.woff2') format('woff2'), url('latohairline.woff') format('woff'), url('latohairline.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato Hairline';
+    src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'), url('latohairlineitalic.woff2') format('woff2'), url('latohairlineitalic.woff') format('woff'), url('latohairlineitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
