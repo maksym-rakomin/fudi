@@ -28,6 +28,15 @@ body {
     margin: 0;
     padding: 0;
     font-size: 1.6rem;
+    font-weight: lighter;
+}
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+h1, h2, h3, h4 {
+    text-transform: uppercase;
 }
 a {
     text-decoration: none;
@@ -74,12 +83,13 @@ header {
 .btn-nav li:last-child {
     margin-right: 0;
 }
- 
+
 .title{
     text-align: center;
 }
 .find-your-favorit {
     font: bold italic 3.6rem 'Times New Roman', sans-serif;
+    text-transform: capitalize;
     text-align: center;
     margin: 20vh auto 0;
     padding: 0 20px;
@@ -119,25 +129,59 @@ header h1 {
     margin: 35px auto;
     text-align: center;
     letter-spacing: .2rem;
+    text-transform: uppercase;
 }
-.little-title a {
+.little-title__link {
     font-weight: bold;
     text-decoration: underline;
+    transition: all .25s ease-in-out;
 }
+.little-title__link:hover,
+.little-title__link:active,
+.little-title__link:focus {
+    background: brown;
+    box-shadow: 0 0 5px 5px brown;
 
+}
 
 .qualities {
-    padding-bottom: 90px;
+    padding: 40px 0;
 }
-.img-qualities {
+.qualities__link {
+    display: block;
+    padding: 50px 10px;
+    border-radius: 15px;
+    transition: all .4s ease-in-out;
+}
+.qualities__link:hover,
+.qualities__link:active,
+.qualities__link:focus {
+    background: #eee;
+}
+.qualites__box-img {
+    text-align: center;
     width: 10rem;
     height: 10rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* background-size: contain; */
+    /* line-height: 10rem; */
+    /* text-align: center; */
     border-radius: 50%;
     border: 3px solid #000;
-    margin: 100px auto 0;
+    margin: 0 auto;
+    position: relative;
+}
+.img-qualities {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    /* display: inline; */
+    /* vertical-align: middle; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+    /* margin: 100px auto 0; */
 }
 .qualities h2 {
     text-align: center;
@@ -145,8 +189,6 @@ header h1 {
     font-weight: bold;
 }
 .qualities p {
-    font-size: 1.6rem;
-    font-weight: lighter;
     text-align: center;
     padding: 10px;
 }
@@ -164,8 +206,9 @@ header h1 {
     padding: 75px 20px 40px;
 }
 .right-box h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
+    /* font-size: 1.8rem;
+    font-weight: bold; */
+    text-align: left;
     position: relative;
 }
 .right-box h2::after {
@@ -177,8 +220,6 @@ header h1 {
     width: 12rem;
 }
 .right-box p {
-    font-size: 1.6rem;
-    font-weight: lighter;
     margin: 0 0 40px 0;
 }
 .right-box img {
@@ -200,20 +241,22 @@ header h1 {
     margin: auto;
     display: block;
 }
-.reviews h2,
-.reviews p {
+.reviews blockquote,
+.reviews cite {
     text-align: center;
     color: #948a94;
         
 }
-.reviews h2 {
+.reviews blockquote {
     font: 36px/1.7 'Lato Hairline', serif;
+    text-transform: capitalize;
 }
-.reviews p {
+.reviews cite {
     font: italic 20px/1.7 'Lato Hairline', serif;
+    display: block;
 }
-.reviews p::before,
-.reviews p::after {
+.reviews cite::before,
+.reviews cite::after {
     content: "-";
     margin: 5px;
 }
@@ -248,8 +291,8 @@ li.active {
     margin: 0;
 }
 .dishes h2 {
-    font-size: 1.8rem;
-    text-align: center;
+    /* font-size: 1.8rem;
+    text-align: center; */
     position: relative;
     padding-bottom: 45px;
 }
@@ -302,23 +345,21 @@ li.active {
     padding: 0 10px;
     overflow: hidden;
     max-height: 2.6rem;
-    text-transform: uppercase;
 }
 .dishes__metrics {
     text-align: center;
-    font-weight: bold;
     padding: 55px 0;
 }
 .dishes__metrics h3 {
     font-size: 3.6rem;
     line-height: 1;
+    font-weight: bold;
     max-height: 3.6rem;
     overflow: hidden;
     padding: 0 5px;
     margin: 0;
 }
 .dishes__metrics p {
-    font-size: 1.6rem;
     line-height: 1;
     max-height: 1.6rem;
     overflow: hidden;
@@ -331,9 +372,15 @@ footer {
     font-size: 1.4rem;
     padding: 25px 0;
 }
-footer a {
+.footer__link {
     color: #000;
     font-weight: 400;
+}
+.footer__link:hover,
+.footer__link:active,
+.footer__link:focus {
+    background: brown;
+    box-shadow: 0 0 5px 5px brown;
 }
 footer p {
     color: #8b8b8b;

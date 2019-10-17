@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Default</title>
+    <title>Fudi</title>
 </head>
 <body>
     <header>
         <div class="ba-container">
             <nav class="ba-grid">
-                <div class="logo ba-text-left ba-width-1-4">
+                <div class="logo ba-width-1-4">
                     <img src="img/logo.png" alt="">
                 </div>
                 <ul class="btn-nav ba-float-right ba-text-right ba-width-3-4">
@@ -25,33 +25,41 @@
                 </ul>
             </nav>
             <div class="title">
-                <div class="find-your-favorit">Find your Favorite</div>
-                <h1>recipes</h1>
+                
+                <h1><div class="find-your-favorit">Find your Favorite</div>recipes</h1>
                 <a href="#" class="btn">get started</a>
-                <div class="little-title">OR SEND US YOUR OWN RECIPES AND <a href="#">GET REWARDED!</a></div>
+                <div class="little-title">OR SEND US YOUR OWN RECIPES AND <a href="#" class="little-title__link">GET REWARDED!</a></div>
             </div>
         </div>
     </header>
     <main>
-        <div class="ba-container">
-            <section class="qualities ba-grid">
-                <div class="ba-width-1-3">
-                    <div class="img-qualities" style="background-image: url('img/qualities-img-1.png')"></div>
-                    <h2>GET INSPIRED</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat. </p>
+        <section class="qualities">
+            <div class="ba-container">
+                <div class="ba-grid">
+                    <div class="ba-width-1-3">
+                        <a class="qualities__link">
+                            <div class="qualites__box-img"><img class="img-qualities" src="img/qualities-img-1.png" alt=""></div>
+                            <h2>GET INSPIRED</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat. </p>
+                        </a>
+                    </div>
+                    <div class="ba-width-1-3">
+                        <a class="qualities__link">
+                            <div class="qualites__box-img"><img class="img-qualities" src="img/qualities-img-2.png" alt=""></div>
+                            <h2>GET REWARDED</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quidem unde rem fugiat aperiam at!</p>
+                        </a>
+                    </div>
+                    <div class="ba-width-1-3">
+                        <a class="qualities__link">
+                            <div class="qualites__box-img"><img class="img-qualities" src="img/qualities-img-3.png" alt=""></div>
+                            <h2>GET SOCIAL</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit voluptates fugit voluptatum libero consequuntur, eveniet magni voluptate.</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="ba-width-1-3">
-                    <div class="img-qualities" style="background-image: url('img/qualities-img-2.png')"></div>
-                    <h2>GET REWARDED</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, quidem unde rem fugiat aperiam at!</p>
-                </div>
-                <div class="ba-width-1-3">
-                    <div class="img-qualities" style="background-image: url('img/qualities-img-3.png')"></div>
-                    <h2>GET SOCIAL</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reprehenderit voluptates fugit voluptatum libero consequuntur, eveniet magni voluptate.</p>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <section class="app">
            <div class="ba-container">
                 <div class="ba-grid">
@@ -75,8 +83,8 @@
             <div class="ba-container">
                 <div class="reviews__box">
                     <img src="img/reviwes-man.jpg" alt="">
-                    <h2>“I am so happy because I found this recipe, and it just made my life easier. Thanks  so much for sharing!”</h2>
-                    <p>Michael Dawson, San Francisco, CA</p>
+                    <blockquote>“I am so happy because I found this recipe, and it just made my life easier. Thanks  so much for sharing!”</blockquote>
+                    <cite>Michael Dawson, San Francisco, CA</cite>
                 </div>
                 <ul>
                     <li></li>
@@ -92,128 +100,158 @@
             <div class="dishes-container ba-grid">
                 <div class="ba-width-1-5">
                     <div class="dishes__box">
-                        <img src="img/eat-img-1.jpg" alt="">
-                        <div class="dishes-p-a">
-                            <p>127 Recipes</p>
-                            <h3>italian</h3>
-                        </div>
+                        <a href="#" class="dishes__link">
+                            <img src="img/eat-img-1.jpg" alt="">
+                            <div class="dishes-p-a">
+                                <p>127 Recipes</p>
+                                <h3>italian</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="ba-width-1-5">
                     <div class="dishes__box">
-                        <img src="img/eat-img-2.jpg" alt="">
-                        <div class="dishes-p-a">
-                            <p>127 Recipes</p>
-                            <h3>indian</h3>
-                        </div>
+                        <a href="#" class="dishes__link">
+                            <img src="img/eat-img-2.jpg" alt="">
+                            <div class="dishes-p-a">
+                                <p>127 Recipes</p>
+                                <h3>indian</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="ba-width-1-5">
                     <div class="dishes__box">
-                        <img src="img/eat-img-3.jpg" alt="">
-                        <div class="dishes-p-a">
-                            <p>127 Recipes</p>
-                            <h3>french</h3>
-                        </div>
+                        <a href="#" class="dishes__link">
+                            <img src="img/eat-img-3.jpg" alt="">
+                            <div class="dishes-p-a">
+                                <p>127 Recipes</p>
+                                <h3>french</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="ba-width-1-5">
                     <div class="dishes__box">
-                        <img src="img/eat-img-4.jpg" alt="">
-                        <div class="dishes-p-a">
-                            <p>127 Recipes</p>
-                            <h3>steakhouse</h3>
-                        </div>
+                        <a href="#" class="dishes__link">
+                            <img src="img/eat-img-4.jpg" alt="">
+                            <div class="dishes-p-a">
+                                <p>127 Recipes</p>
+                                <h3>steakhouse</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="ba-width-1-5">
                     <div class="dishes__box">
-                        <img src="img/eat-img-5.jpg" alt="">
-                        <div class="dishes-p-a">
-                            <p>127 Recipes</p>
-                            <h3>swafood</h3>
-                        </div>
+                        <a href="#" class="dishes__link">
+                            <img src="img/eat-img-5.jpg" alt="">
+                            <div class="dishes-p-a">
+                                <p>127 Recipes</p>
+                                <h3>swafood</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="dishes-container ba-grid">
                 <div class="ba-width-1-5">
                     <div class="dishes__box">
-                        <img src="img/eat-img-6.jpg" alt="">
-                        <div class="dishes-p-a">
-                            <p>127 Recipes</p>
-                            <h3>sushi</h3>
-                        </div>
+                        <a href="#" class="dishes__link">
+                            <img src="img/eat-img-6.jpg" alt="">
+                            <div class="dishes-p-a">
+                                <p>127 Recipes</p>
+                                <h3>sushi</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="ba-width-1-5">
                     <div class="dishes__box">
-                        <img src="img/eat-img-7.jpg" alt="">
-                        <div class="dishes-p-a">
-                            <p>127 Recipes</p>
-                            <h3>maxican</h3>
-                        </div>
+                        <a href="#" class="dishes__link">
+                            <img src="img/eat-img-7.jpg" alt="">
+                            <div class="dishes-p-a">
+                                <p>127 Recipes</p>
+                                <h3>maxican</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="ba-width-1-5">
                     <div class="dishes__box">
-                        <img src="img/eat-img-8.jpg" alt="">
-                        <div class="dishes-p-a">
-                            <p>127 Recipes</p>
-                            <h3>chinese</h3>
-                        </div>
+                        <a href="#" class="dishes__link">
+                            <img src="img/eat-img-8.jpg" alt="">
+                            <div class="dishes-p-a">
+                                <p>127 Recipes</p>
+                                <h3>chinese</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="ba-width-1-5">
                     <div class="dishes__box">
-                        <img src="img/eat-img-9.jpg" alt="">
-                        <div class="dishes-p-a">
-                            <p>127 Recipes</p>
-                            <h3>pizza</h3>
-                        </div>
+                        <a href="#" class="dishes__link">
+                            <img src="img/eat-img-9.jpg" alt="">
+                            <div class="dishes-p-a">
+                                <p>127 Recipes</p>
+                                <h3>pizza</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="ba-width-1-5">
                     <div class="dishes__box">
-                        <img src="img/eat-img-10.jpg" alt="">
-                        <div class="dishes-p-a">
-                            <p>127 Recipes</p>
-                            <h3>american</h3>
-                        </div>
+                        <a href="#" class="dishes__link">
+                            <img src="img/eat-img-10.jpg" alt="">
+                            <div class="dishes-p-a">
+                                <p>127 Recipes</p>
+                                <h3>american</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="ba-container">
                 <div class="dishes-container ba-grid">
                     <div class="ba-width-1-5">
-                        <div class="dishes__metrics">
-                            <h3>23,567</h3>
-                            <p>Recipes Available</p>
-                        </div>
+                        <a href="#" class="dishes__link">
+                            <div class="dishes__metrics">
+                                <h3>23,567</h3>
+                                <p>Recipes Available</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="ba-width-1-5">
-                        <div class="dishes__metrics">
-                            <h3>431,729</h3>
-                            <p>Active Users</p>
-                        </div>
+                        <a href="#" class="dishes__link">
+                            <div class="dishes__metrics">
+                                <h3>431,729</h3>
+                                <p>Active Users</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="ba-width-1-5">
-                        <div class="dishes__metrics">
-                            <h3>892,173</h3>
-                            <p>Positive Reviews</p>
-                        </div>
+                        <a href="#" class="dishes__link">
+                            <div class="dishes__metrics">
+                                <h3>892,173</h3>
+                                <p>Positive Reviews</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="ba-width-1-5">
-                        <div class="dishes__metrics">
-                            <h3>56,581</h3>
-                            <p>Photos and Videos</p>
-                        </div>
+                        <a href="#" class="dishes__link">
+                            <div class="dishes__metrics">
+                                <h3>56,581</h3>
+                                <p>Photos and Videos</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="ba-width-1-5">
-                        <div class="dishes__metrics">
-                            <h3>3,182</h3>
-                            <p>Specias and Herts</p>
-                        </div>
+                        <a href="#" class="dishes__link">
+                            <div class="dishes__metrics">
+                                <h3>3,182</h3>
+                                <p>Specias and Herts</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -226,7 +264,7 @@
                     <p class="footer-box-left">©2014 Fudi. All Rights Reserved.</p>
                 </div>
                 <div class="ba-width-1-2">
-                    <p class="footer-box-right">DESIGN BY: <a href="#" target="_blank">WWW.BEKADES.COM</a></p>
+                    <p class="footer-box-right">DESIGN BY: <a class="footer__link" href="#" target="_blank">WWW.BEKADES.COM</a></p>
                 </div>
             </div>
         </div>
